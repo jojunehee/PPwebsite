@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form 연습!</title>
+</head>
+<body>
+    <h2>사용자의 정보 입력</h2>
+    <form action="/action_page.php" method="post">
+        <!-- 텍스트 -->
+        <label for="username">사용자 이름:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <!-- 라디오 -->
+        <label>성별:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">남성</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">여성</label><br><br>
+
+        <!-- 체크박수 -->
+        <label>관심 있는 주제:</label>
+        <input type="checkbox" id="coding" name="interests[]" value="coding">
+        <label for="coding">코딩</label>
+        <input type="checkbox" id="design" name="interests[]" value="design">
+        <label for="design">디자인</label><br><br>
+
+        <!-- 드롭다운 -->
+        <label for="country">국가 선택:</label>
+        <select id="country" name="country">
+            <option value="usa">미국</option>
+            <option value="canada">캐나다</option>
+            <option value="uk">영국</option>
+        </select><br><br>
+
+        <!-- 날짜 -->
+        <label for="birthdate">생년월일:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <!-- 텍스트 아리아-->
+        <label for="comments">의견:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- 제출 -->
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>

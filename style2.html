@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #d14836;
+      line-height: 20px;
+    }
+
+    .container {
+      min-width: 900px;
+    }
+
+    .wrapper {
+      position: relative;
+      overflow: auto;
+    }
+
+    #top {
+      color: #ffffff;
+      padding: 15px;
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    #top h1 {
+      margin: 0;
+      line-height: 50px;
+    }
+
+    #menubar {
+      width: 190px;
+      float: right;
+    }
+
+    #main {
+      padding: 10px;
+      background-color: #ffffff;
+      font: 80% Verdana;
+    }
+
+    #main h1,
+    #main h2 {
+      color: #d14836;
+    }
+
+    #sidebar {
+      background-color: #F6DAD7;
+      color: #d14836;
+      padding: 10px;
+    }
+
+    #bottom {
+      text-align: center;
+      padding: 10px;
+      font-size: 70%;
+      color: #ffffff;
+    }
+
+    #menulist {
+      padding: 0;
+      font: 16px verdana;
+    }
+
+    .menuitem {
+      width: 155px;
+      background-color: #d14836;
+      border: 1px solid #d14836;
+      border-radius: 40px;
+      color: #ffffff;
+      list-style-type: none;
+      margin: 10px;
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .menuitem:nth-child(2) {
+      background-color: white;
+      color: #d14836;
+      font-weight: bold;
+    }
+
+    .menuitem:hover {
+      background-color: #ffffff;
+      color: #d14836;
+    }
+
+    a {
+      color: #d14836;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>Welcome to My Homepage</h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </div>
+  <div class="wrapper">
+    <div id="menubar">
+      <ul id="menulist">
+        <li class="menuitem">Stylesheet 1</li>
+        <li class="menuitem">Stylesheet 2</li>
+        <li class="menuitem">No Stylesheet</li>
+      </ul>
+    </div>
+    <div id="main">
+      <h1>Same Page Different Stylesheets</h1>
+      <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.</p>
+      <h2>No Styles</h2>
+      <p>This page uses DIV elements to group different sections of the HTML page.</p>
+    </div>
+    <div id="sidebar">
+      <h3>Side-Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+  </div>
+  <div id="bottom">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  </div>
+</div>
+
+</body>
+</html>
